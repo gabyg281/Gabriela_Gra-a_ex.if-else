@@ -1,3 +1,8 @@
-# Título
+Neste exercício, quis criar algo que permitisse ao utilizador alterar o comportamento visual de um círculo através do rato.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod convallis magna ut pulvinar. Nulla iaculis, metus in semper vestibulum, lorem quam fringilla tellus, eu varius leo dui ac neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed faucibus ultrices ante, ut suscipit est euismod ut. Duis sit amet dictum turpis. Fusce non turpis porta nisi iaculis eleifend. Donec eget lobortis risus. Proin molestie tincidunt elit. Donec a enim ac neque tristique molestie. Sed nibh massa, dignissim at ipsum non, volutpat aliquam erat. Sed tincidunt quis urna a semper. Phasellus leo orci, imperdiet et ullamcorper non, finibus eu nunc. Duis vel ligula ac orci tincidunt aliquam. Suspendisse potenti. Sed congue lectus at aliquet cursus. 
+O círculo começa no centro do ecrã, com uma cor vermelha. Quando clico dentro dele, o programa verifica se o clique ocorreu dentro dos seus limites. Se isso acontecer, o círculo muda para uma posição aleatória e recebe uma nova cor, também aleatória.
+Utilizei as variáveis circleX e circleY para controlar a posição do círculo, circleSize para definir o seu tamanho e circleColor para guardar a sua cor.
+Para detetar os cliques, utilizei mousePressed(), e recorri a dist() para calcular a distância entre o rato e o centro do círculo, permitindo verificar se o clique aconteceu dentro dele.
+Também utilizei condicionais (if e else) para alterar a espessura do contorno consoante a posição horizontal do rato (na metade esquerda do ecrã, o contorno é mais fino; na metade direita, fica mais grosso).
+
+O objetivo foi explorar a interação entre o utilizador e o desenho, utilizando condições e valores aleatórios para criar variações visuais.

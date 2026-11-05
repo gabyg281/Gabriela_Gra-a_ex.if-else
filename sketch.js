@@ -1,3 +1,4 @@
+
 let circleX;
 let circleY;
 let circleSize = 100;
@@ -15,28 +16,29 @@ function setup() {
 function draw() {
   background(0);
 
+  if (mouseX < width / 2) {
+    strokeWeight(2);
+  } else {
+    strokeWeight(8);
+  }
+
   fill(circleColor);
   stroke(255);
-  strokeWeight(3);
 
   circle(circleX, circleY, circleSize);
 }
 
 function mousePressed() {
 
-  // Verifica se clicaste dentro do círculo
   if (dist(mouseX, mouseY, circleX, circleY) < circleSize / 2) {
 
-    // Muda a posição para um local aleatório
     circleX = random(circleSize / 2, width - circleSize / 2);
     circleY = random(circleSize / 2, height - circleSize / 2);
 
-    // Verifica em que metade do ecrã clicaste
-    if (mouseX < width / 2) {
-      circleColor = color(255, 0, 0);
-    } else {
-      circleColor = color(0, 100, 255);
-    }
+    circleColor = color(random(255), random(255), random(255));
 
+
+  } else {
+    
   }
 }
